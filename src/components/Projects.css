@@ -1,0 +1,106 @@
+/* General Section Styling */
+.projects-section {
+  padding: 4rem 0; /* Same spacing as your other sections */
+}
+
+.projects-container {
+  max-width: 80rem; /* Consistent max-width as other sections */
+  margin: 0 auto;
+  padding: 0 1rem; /* Horizontal padding */
+}
+
+.projects-title {
+  font-size: 1.8rem; /* Matches the rest of the sections */
+  font-weight: 600; /* Slightly bold */
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #2196F3; /* Dark gray for text */
+}
+
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Single column by default */
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on large screens */
+  }
+}
+
+/* Card Styling */
+.project-card {
+  background-color: white;
+  border-radius: 0.5rem; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1.5rem; /* Inner padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+/* Icon Styling */
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #2196F3; /* Blue background */
+  color: white;
+  border-radius: 50%; /* Circular icon */
+  margin: 0 auto 1rem; /* Centered with spacing */
+  font-size: 1.5rem;
+}
+
+/* Title and Description Styling */
+.project-title {
+  font-size: 1.25rem; /* Slightly larger title */
+  font-weight: 600;
+  color: #2d3748; /* Dark gray text */
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #4a5568; /* Medium gray text */
+  text-align: center;
+  font-size: 0.9375rem; /* Slightly smaller text */
+  margin-bottom: 1rem;
+}
+
+/* Tags Styling */
+.project-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tag {
+  background-color: #b2d4f0; /* Light gray background */
+  color: #2d3748; /* Dark text */
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem; /* Small text */
+  border-radius: 9999px; /* Pill shape */
+  font-weight: 500;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  .project-description {
+    font-size: 0.875rem; /* Slightly smaller text on smaller screens */
+  }
+}

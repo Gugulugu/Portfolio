@@ -1,0 +1,81 @@
+.hero-container {
+  display: flex; /* Create a horizontal layout */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center items horizontally */
+  gap: 50px; /* Add space between the image and text */
+  flex-wrap: wrap; /* Ensure responsiveness for small screens */
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #2196F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.name-text{
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196F3;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 600px; /* Set a max width for the text */
+}
+.hero-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.6; /* Improve readability */
+    color: #333333; /* Optional: Change text color */
+  }
+  
+
+.hero-links {
+  margin-top: 10px;
+}
+
+.hero-links a {
+  text-decoration: none;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+
+/* Hero links with a small gap, subtle style */
+.hero-links {
+  display: flex; /* Arrange links in a row */
+  justify-content: center; /* Center the links horizontally */
+  align-items: center; /* Align icons and text vertically */
+  gap: 20px; /* Add space between each link */
+  margin-top: 10px; /* Add spacing above the links */
+}
+
+.hero-links a {
+  text-decoration: none;
+  color: #2196F3;
+  font-weight: bold;
+  display: flex; /* To align the icon and text side by side */
+  align-items: center; /* Vertical alignment for icon and text */
+  gap: 5px; /* Space between icon and text */
+}
+
+.hero-links a:hover {
+  color: #1565C0; /* Slightly darker blue on hover */
+}
+
+.hero-links a svg {
+  font-size: 18px; /* Adjust icon size */
+}
+
+  

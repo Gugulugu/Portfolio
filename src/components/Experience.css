@@ -1,0 +1,171 @@
+.projects-title {
+  font-size: 1.8rem; /* Matches the rest of the sections */
+  font-weight: 600; /* Slightly bold */
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #2196F3; /* Dark gray for text */
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 3rem; /* More space for proper alignment */
+  margin-top: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1.5rem; /* Positioning of the vertical line */
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #90caf9, #007acc);
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensure proper alignment of text */
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%; /* Vertically center the marker */
+  left: -2rem; /* Align marker with vertical line */
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #90caf9;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 122, 204, 0.5);
+  z-index: 1;
+}
+
+.timeline-item.active::before {
+  background-color: #007acc;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  color: #007acc;
+}
+
+.timeline-item h4 {
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.timeline-item span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ccc;
+  transition: transform 0.3s ease, border-top-color 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.details-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.timeline-item.active .details-container {
+  max-height: 300px; /* Adjust based on content size */
+}
+
+.details-container ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.details-container li {
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline::before {
+    left: 1rem; /* Adjust vertical line for smaller screens */
+  }
+
+  .timeline-item {
+    padding: 0.8rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 1rem;
+  }
+
+  .timeline-item h4 {
+    font-size: 0.9rem;
+  }
+
+  .timeline-item span {
+    font-size: 0.85rem;
+  }
+
+  .timeline-item::before {
+    left: -1.5rem; /* Adjust marker position for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding: 0.6rem;
+  }
+
+  .timeline-item h3 {
+    font-size: 0.9rem;
+  }
+
+  .timeline-item h4 {
+    font-size: 0.8rem;
+  }
+
+  .timeline-item span {
+    font-size: 0.7rem;
+  }
+
+  .details-container ul {
+    padding-left: 1rem;
+  }
+}
