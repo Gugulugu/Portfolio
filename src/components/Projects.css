@@ -1,6 +1,6 @@
 /* General Section Styling */
 .projects-section {
-  padding: 4rem 0; /* Same spacing as your other sections */
+  padding: 4rem 0;
 }
 
 .projects-container {
@@ -9,13 +9,6 @@
   padding: 0 1rem; /* Horizontal padding */
 }
 
-.projects-title {
-  font-size: 1.8rem; /* Matches the rest of the sections */
-  font-weight: 600; /* Slightly bold */
-  text-align: left;
-  margin-bottom: 2rem;
-  color: #2196F3; /* Dark gray for text */
-}
 
 
 /* Grid Layout */

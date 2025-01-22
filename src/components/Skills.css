@@ -1,34 +1,23 @@
 
-.projects-title {
-  font-size: 1.8rem; /* Matches the rest of the sections */
-  font-weight: 600; /* Slightly bold */
-  text-align: left;
-  margin-bottom: 2rem;
-  color: #25313304; /* Dark gray for text */
-}
 .skills-section {
-  padding: 2rem;
+  padding: 4rem 0;
   text-align: center;
 }
-
+.skills-container {
+  max-width: 80rem; /* Consistent max-width as other sections */
+  margin: 0 auto;
+  padding: 0 1rem; /* Horizontal padding */
+}
 
 
 .skills-categories {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
 }
 
-.category {
-  flex: 1 1 calc(33.33% - 2rem); /* Flexible grid layout */
-  min-width: 200px; /* Prevent items from becoming too small */
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  text-align: left;
-}
+
 
 .category h4 {
   font-size: 1.2rem;

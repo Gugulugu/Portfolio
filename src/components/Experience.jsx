@@ -6,7 +6,7 @@ function Experience() {
     {
       role: "Assistant to the Chief IT-Architect, Working Student",
       company: "IKB, Stuttgart, Germany",
-      date: "03/2024 - current",
+      date: "03/2024 - 11/2024",
       details: [
         "Directly collaborated with the Chief IT-Architect to develop the organization’s first AI strategy, focusing on innovative applications of artificial intelligence to enhance business processes and decision-making",
         "Development and coordination of a Request for Proposal (RFP) for a new Enterprise Architecture Management (EAM) tool, including the collection and analysis of both functional and non-functional requirements",
@@ -50,7 +50,8 @@ function Experience() {
 
   return (
     <section className="experience-section" id="experience">
-      <h2 className="projects-title">Education</h2>
+      <div className="experience-container">
+      <h2 className="title">Experience</h2>
       <div className="timeline">
         {experiences.map((exp, idx) => (
           <div
@@ -77,6 +78,7 @@ function Experience() {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );

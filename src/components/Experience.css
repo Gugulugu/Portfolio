@@ -1,9 +1,11 @@
-.projects-title {
-  font-size: 1.8rem; /* Matches the rest of the sections */
-  font-weight: 600; /* Slightly bold */
-  text-align: left;
-  margin-bottom: 2rem;
-  color: #2196F3; /* Dark gray for text */
+.experience-section {
+  padding: 4rem 0;
+}
+
+.experience-container {
+  max-width: 80rem; /* Consistent max-width as other sections */
+  margin: 0 auto;
+  padding: 0 1rem; /* Horizontal padding */
 }
 
 .timeline {

@@ -8,22 +8,20 @@ function Skills() {
       items: ["PyTorch", "TensorFlow", "Hugging Face (HF)", "Scikit-learn", "OpenCV"],
     },
     {
-      category: "Specialized AI Skills",
+      category: "AI Fields",
       items: ["Graph Neural Networks", "Vision Transformers", "Computer Vision", "NLP", "Reinforcement Learning"],
     },
     {
-      category: "Data & Analytics",
-      items: ["SQL", "Power BI", "Tableau"],
+      category: "Technologies",
+      items: ["SQL", "Power BI, Tableau", "AWS", "Azure", "Git"],
     },
-    {
-      category: "Cloud & DevOps",
-      items: ["AWS", "Azure", "Git", "Cypress"],
-    },
+
   ];
 
   return (
     <section className="skills-section" id="skills">
-      <h2 className="projects-title">Skills</h2>
+      <div className="skills-container">
+      <h2 className="title">Skills</h2>
       <div className="skills-categories">
         {skills.map((skillCategory, idx) => (
           <div className="category" key={idx}>
@@ -35,6 +33,7 @@ function Skills() {
             </ul>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );

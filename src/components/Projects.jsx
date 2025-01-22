@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <section className="projects-section" id="projects">
       <div className="projects-container">
-        <h2 className="projects-title">Research & ML Projects</h2>
+        <h2 className="title">Research & ML Projects</h2>
         <div className="projects-grid">
           {projectList.map((project, idx) => {
             const Icon = project.icon;

@@ -6,6 +6,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 export default function Hero() {
   return (
     <section id="hero">
+
       <div className="container hero-container">
         {/* Left: Profile Picture */}
         <div className="profile-pic">

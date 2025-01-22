@@ -83,3 +83,21 @@ main {
   padding: 20px;     /* Add some space inside the container */
   box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left; /* Center-align globally */
+  margin-bottom: 2rem;
+  color: #2e2f30;
+}
+
+.category {
+  flex: 1 1 calc(33.33% - 2rem); /* Flexible grid layout */
+  min-width: 200px; /* Prevent items from becoming too small */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: left;
+}

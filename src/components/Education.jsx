@@ -55,7 +55,8 @@ function Education() {
 
   return (
     <section className="education-section" id="education">
-      <h2 className="projects-title">Education</h2>
+      <div className="education-container">
+      <h2 className="title">Education</h2>
       <div className="timeline">
         {educationList.map((edu, idx) => (
           <div
@@ -82,6 +83,7 @@ function Education() {
         ))}
       </div>
       <div className="further-education">
+      <div className="further-education-container">
       <h3 className="projects-title">Further Education & Courses</h3>
         <div className="further-education-categories">
           {furtherEd.map((category, idx) => (
@@ -95,6 +97,8 @@ function Education() {
             </div>
           ))}
         </div>
+      </div>
+      </div>
       </div>
     </section>
   );
