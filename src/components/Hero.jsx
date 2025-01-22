@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="container hero-container">
         {/* Left: Profile Picture */}
         <div className="profile-pic">
-          <img src="/Profil.jpg" alt="Profile" />
+          <img src={`${process.env.PUBLIC_URL}/Profil.jpg`} alt="Profile" />
         </div>
 
         {/* Right: Text Content */}
