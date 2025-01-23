@@ -9,7 +9,7 @@ function Skills() {
     },
     {
       category: "AI Fields",
-      items: ["Graph Neural Networks", "Vision Transformers", "Computer Vision", "NLP", "Reinforcement Learning"],
+      items: ["Graph Neural Networks", "Computer Vision (ViT,CNN)", "NLP", "Reinforcement Learning"],
     },
     {
       category: "Technologies",
