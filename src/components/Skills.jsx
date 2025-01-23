@@ -5,7 +5,7 @@ function Skills() {
   const skills = [
     {
       category: "AI/ML Frameworks",
-      items: ["PyTorch", "TensorFlow", "Hugging Face (HF)", "Scikit-learn", "OpenCV"],
+      items: ["PyTorch", "TensorFlow", "Hugging Face (HF)", "Scikit-learn" ],
     },
     {
       category: "AI Fields",
@@ -13,7 +13,11 @@ function Skills() {
     },
     {
       category: "Technologies",
-      items: ["SQL", "Power BI, Tableau", "AWS", "Azure", "Git"],
+      items: ["Power BI, Tableau", "AWS", "Azure", "Git"],
+    },
+    {
+      category: "Programming Languages & Frameworks",
+      items: ["Python", "C++", "JavaScript", "SQL", "React", "Node.js", "Django"],
     },
 
   ];
