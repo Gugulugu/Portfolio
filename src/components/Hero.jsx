@@ -26,7 +26,7 @@ export default function Hero() {
               <FaLinkedin /> LinkedIn
             </a>
             &bull;
-            <a href="https://github.com/Gugulugu">
+            <a href="https://github.com/denizbickici">
               <FaGithub /> GitHub
             </a>
             &bull;
